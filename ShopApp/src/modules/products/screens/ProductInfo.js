@@ -11,7 +11,7 @@ import {
   Animated,
   ToastAndroid,
 } from 'react-native';
-import {COLOURS, Items} from '../database/Database';
+import {COLOURS, Items} from '../../../components/database/Database';
 import Entypo from 'react-native-vector-icons/Entypo';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -356,7 +356,7 @@ const ProductInfo = ({route, navigation}) => {
               color: COLOURS.white,
               textTransform: 'uppercase',
             }}>
-            {product.isAvailable ? 'Add to cart' : 'Not Avialable'}
+            {product.isAvailable ? 'Add to cart' : 'Not Available'}
           </Text>
         </TouchableOpacity>
       </View>
