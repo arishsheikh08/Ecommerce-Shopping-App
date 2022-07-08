@@ -196,7 +196,7 @@ const ProductsScreen = ({navigation}) => {
                       fontWeight: '500',
                       letterSpacing: 1,
                     }}>
-                    Earphones
+                    Products
                   </Text>
                   <Text
                     style={{

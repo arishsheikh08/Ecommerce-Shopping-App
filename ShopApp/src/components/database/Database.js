@@ -108,4 +108,36 @@ export const Items = [
       require('../database/images/accessories/boultairbass3.png'),
     ],
   },
+  {
+    id: 7,
+    category: 'product',
+    productName: 'FAUSTO',
+    productPrice: 1899,
+    description:
+      'Men Brown Leather Flat Boots Casual Shoes',
+    isOff: false,
+    productImage: require('../database/images/products/Fausto.webp'),
+    isAvailable: true,
+    productImageList: [
+      require('../database/images/products/F1.webp'),
+      require('../database/images/products/F2.webp'),
+      require('../database/images/products/F3.webp'),
+    ],
+  },
+  {
+    id: 8,
+    category: 'product',
+    productName: 'ADIDAS',
+    productPrice: 1999,
+    description:
+      "Adidas Men's Herlz M Core Black Running Shoes",
+    isOff: false,
+    productImage: require('../database/images/products/Adidas.jpg'),
+    isAvailable: true,
+    productImageList: [
+      require('../database/images/products/A1.webp'),
+      require('../database/images/products/A2.webp'),
+      require('../database/images/products/Adidas.jpg'),
+    ],
+  },
 ];
