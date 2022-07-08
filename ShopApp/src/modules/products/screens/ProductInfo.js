@@ -61,7 +61,7 @@ const ProductInfo = ({route, navigation}) => {
           'Item Added Successfully to cart',
           ToastAndroid.SHORT,
         );
-        navigation.navigate('Home');
+        navigation.navigate('Product');
       } catch (error) {
         return error;
       }
@@ -104,6 +104,7 @@ const ProductInfo = ({route, navigation}) => {
   };
 
   return (
+   
     <View
       style={{
         width: '100%',
@@ -127,7 +128,7 @@ const ProductInfo = ({route, navigation}) => {
             alignItems: 'center',
             marginBottom: 4,
           }}>
-          <View
+          {/* <View
             style={{
               width: '100%',
               flexDirection: 'row',
@@ -147,7 +148,7 @@ const ProductInfo = ({route, navigation}) => {
                 }}
               />
             </TouchableOpacity>
-          </View>
+          </View> */}
           <FlatList
             data={product.productImageList ? product.productImageList : null}
             horizontal
@@ -198,7 +199,7 @@ const ProductInfo = ({route, navigation}) => {
             paddingHorizontal: 16,
             marginTop: 6,
           }}>
-          <View
+          {/* <View
             style={{
               flexDirection: 'row',
               alignItems: 'center',
@@ -219,7 +220,7 @@ const ProductInfo = ({route, navigation}) => {
               }}>
               Shopping
             </Text>
-          </View>
+          </View> */}
           <View
             style={{
               flexDirection: 'row',
@@ -238,7 +239,7 @@ const ProductInfo = ({route, navigation}) => {
               }}>
               {product.productName}
             </Text>
-            <Ionicons
+            {/* <Ionicons
               name="link-outline"
               style={{
                 fontSize: 24,
@@ -247,7 +248,7 @@ const ProductInfo = ({route, navigation}) => {
                 padding: 8,
                 borderRadius: 100,
               }}
-            />
+            /> */}
           </View>
           <Text
             style={{
@@ -263,7 +264,7 @@ const ProductInfo = ({route, navigation}) => {
             }}>
             {product.description}
           </Text>
-          <View
+          {/* <View
             style={{
               flexDirection: 'row',
               alignItems: 'center',
@@ -306,7 +307,7 @@ const ProductInfo = ({route, navigation}) => {
                 color: COLOURS.backgroundDark,
               }}
             />
-          </View>
+          </View> */}
           <View
             style={{
               paddingHorizontal: 16,
@@ -360,7 +361,9 @@ const ProductInfo = ({route, navigation}) => {
           </Text>
         </TouchableOpacity>
       </View>
+     
     </View>
+    
   );
 };
 

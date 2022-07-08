@@ -52,6 +52,7 @@ const ProductsScreen = ({navigation}) => {
         return (
           <TouchableOpacity
             onPress={() => navigation.navigate('ProductInfo', {productID: data.id})}
+           
             style={{
               width: '48%',
               marginVertical: 14,
