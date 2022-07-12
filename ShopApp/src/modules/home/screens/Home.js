@@ -1,20 +1,194 @@
 import React from 'react';
-import {View, Text,StyleSheet,Image } from 'react-native';
+import {View, Text,StyleSheet,Image,Pressable } from 'react-native';
 import Banners from '../component/Banner';
+import { Stack, Circle,Box, AspectRatio, Center, HStack,Heading , Divider,ScrollView, Square,Flex , VStack} from 'native-base';
 
-const HomeScreen = () => {
+const HomeScreen = ({navigation}) => {
     return(
+        <>
         <View>
-            <Text>Home Screen</Text>
+
+<View style={{ flexDirection: 'row', backgroundColor:'#fafdf3', justifyContent:'space-evenly' }}  >  
+          <ScrollView horizontal={true}>  
+          <Stack direction="row" mb="2.5" mt="1.5" ml='3' mr='3'   space={3}>
+          
+         
+            <Pressable 
+            onPress={() => navigation.navigate('ProductTab')}>
+          <Circle  size="80px" bg="grey"
+           shadow={"3"}>
+             
+              <Image
+          source={require('../../../components/database/images/products/RK-modified.png')}
+          style={{
+            flex: 1,
+            height:80,
+            width:80,
+            borderRadius:40,
+            
+            
+           
+            // resizeMode: 'cover',
+          }}
+          alt="description of image"
+        />
+          
+          </Circle>
+          <Center>
+          <Text style={{fontSize:12, alignItems:'center', justifyContent:'center'}}> Men</Text>
+          </Center>
+          </Pressable>
+
+           <Pressable   onPress={() => navigation.navigate('ProductTab')}>
+           <Circle size="80px" bg="grey"
+        shadow={"3"}>
+         
+           <Image
+          source={require('../../../components/database/images/products/gigi-modified.png')}
+          style={{
+            flex: 1,
+            height:20,
+            width:80,
+            borderRadius:40,
+            
+            
+           
+            resizeMode: 'cover',
+          }}
+          alt="description of image"
+        />
+            
+          </Circle>
+          <Center>
+          <Text style={{fontSize:12, alignItems:'center', justifyContent:'center'}}> Women</Text>
+          </Center>
+          </Pressable>
+
+          <Pressable  onPress={() => navigation.navigate('ProductTab')}>
+          <Circle size="80px" bg="grey" shadow={"3"}>
+         
+          <Image
+          source={require('../../../components/database/images/products/happy-kids-1-modified.png')}
+          style={{
+            flex: 1,
+            height:20,
+            width:80,
+            borderRadius:40,
+            
+            
+           
+            resizeMode: 'cover',
+          }}
+          alt="description of image"
+        />
+          
+          </Circle>
+          <Center>
+          <Text style={{fontSize:12, alignItems:'center', justifyContent:'center'}} >Kids</Text>
+          </Center>
+          </Pressable>
+
+          <Pressable  onPress={() => navigation.navigate('ProductTab')}>
+          <Circle  size="80px" bg="grey"
+           shadow={"3"}>
+            
+              <Image
+          source={require('../../../components/database/images/products/Men-accessories-modified.png')}
+          style={{
+            flex: 1,
+            height:80,
+            width:80,
+            borderRadius:40,
+            
+            
+           
+            // resizeMode: 'cover',
+          }}
+          alt="description of image"
+        />
+          
+          </Circle>
+          <Center>
+          <Text style={{fontSize:12, alignItems:'center', justifyContent:'center'}}>Accessories</Text>
+          </Center>
+          </Pressable>
+
+
+          <Pressable  onPress={() => navigation.navigate('ProductTab')}>
+          <Circle  size="80px" bg="grey"
+           shadow={"3"}>
+            
+              <Image
+          source={require('../../../components/database/images/products/footwear-modified.png')}
+          style={{
+            flex: 1,
+            height:80,
+            width:80,
+            borderRadius:40,
+            
+            
+           
+            // resizeMode: 'cover',
+          }}
+          alt="description of image"
+        />
+          
+          </Circle>
+          <Center>
+          <Text style={{fontSize:12, alignItems:'center', justifyContent:'center'}}>Footwear</Text>
+          </Center>
+          </Pressable>
+
+          <Pressable  onPress={() => navigation.navigate('ProductTab')}>
+          <Circle  size="80px" bg="grey"
+           shadow={"3"}>
+            
+              <Image
+          source={require('../../../components/database/images/products/decor-modified.png')}
+          style={{
+            flex: 1,
+            height:80,
+            width:80,
+            borderRadius:40,
+            
+            
+           
+            // resizeMode: 'cover',
+          }}
+          alt="description of image"
+        />
+          
+          </Circle>
+          <Center>
+          <Text style={{fontSize:12, alignItems:'center', justifyContent:'center'}}>Decor</Text>
+          </Center>
+          </Pressable>
+
+
+        </Stack>
+        </ScrollView> 
+          </View>
+           
             <View style={{ flex: 1 }}>
                   <Image
                     style={styles.SectionImg2}
-                    source={require('../../../components/database/images/products/Adidas.jpg')}
+                    source={require('../../../components/database/images/products/myntrabanner.webp')}
                     alt="description of image"
                   />
-                </View>
-            {/* <Banners /> */}
+
         </View>
+
+      
+                   
+                </View>
+               
+                </>
+
+
+               
+
+       
+        
     )
 }
 
@@ -47,13 +221,14 @@ const styles = StyleSheet.create({
     },
     SectionImg2: {
       borderColor: 'red',
-      height: 140,
-      width: 360,
+      height: 130,
+      width: 400,
       alignItems: 'stretch',
-      paddingHorizontal: 10,
-      marginLeft: 20,
-      padding: 10,
-      paddingTop: 20,
+    //   paddingHorizontal: 10,
+       marginLeft: 2,
+       marginRight:2,
+    //   padding: 10,
+
       marginBottom: 20,
       marginTop: 10,
     },
