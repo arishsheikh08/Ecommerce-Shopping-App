@@ -1,2 +1,2 @@
 # Ecommerce-Shopping-App
-a simple shopping app consisting of products with cart
+a simple React Native shopping app consisting of products with cart
