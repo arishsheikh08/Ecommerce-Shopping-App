@@ -5,6 +5,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { MyTabs } from './navigation';
 import { NativeBaseProvider } from 'native-base';
+import SplashScreen from  "react-native-splash-screen";
 
 
 const Tab = createBottomTabNavigator();
@@ -12,6 +13,9 @@ const Tab = createBottomTabNavigator();
 const App = () => {
   const Stack = createNativeStackNavigator();
 
+  React.useEffect(() => {
+    SplashScreen.hide();
+  }, []);
   return (
     <>
     <NativeBaseProvider>

@@ -24,7 +24,7 @@ const HomeScreen = ({navigation}) => {
           
          
             <Pressable 
-            onPress={() => navigation.navigate('ProductTab')}>
+            onPress={() => navigation.navigate('Products')}>
           <Circle  size="80px" bg="grey"
            shadow={"3"}>
              
@@ -49,7 +49,7 @@ const HomeScreen = ({navigation}) => {
           </Center>
           </Pressable>
 
-           <Pressable   onPress={() => navigation.navigate('ProductTab')}>
+           <Pressable   onPress={() => navigation.navigate('Products')}>
            <Circle size="80px" bg="grey"
         shadow={"3"}>
          
@@ -74,7 +74,7 @@ const HomeScreen = ({navigation}) => {
           </Center>
           </Pressable>
 
-          <Pressable  onPress={() => navigation.navigate('ProductTab')}>
+          <Pressable  onPress={() => navigation.navigate('Products')}>
           <Circle size="80px" bg="grey" shadow={"3"}>
          
           <Image
@@ -98,7 +98,7 @@ const HomeScreen = ({navigation}) => {
           </Center>
           </Pressable>
 
-          <Pressable  onPress={() => navigation.navigate('ProductTab')}>
+          <Pressable  onPress={() => navigation.navigate('Products')}>
           <Circle  size="80px" bg="grey"
            shadow={"3"}>
             
@@ -124,7 +124,7 @@ const HomeScreen = ({navigation}) => {
           </Pressable>
 
 
-          <Pressable  onPress={() => navigation.navigate('ProductTab')}>
+          <Pressable  onPress={() => navigation.navigate('Products')}>
           <Circle  size="80px" bg="grey"
            shadow={"3"}>
             
@@ -149,7 +149,7 @@ const HomeScreen = ({navigation}) => {
           </Center>
           </Pressable>
 
-          <Pressable  onPress={() => navigation.navigate('ProductTab')}>
+          <Pressable  onPress={() => navigation.navigate('Products')}>
           <Circle  size="80px" bg="grey"
            shadow={"3"}>
             
@@ -211,8 +211,8 @@ const HomeScreen = ({navigation}) => {
           
   
     <Box>
-      <Text  style={{
-                fontSize: 16,
+      <Text  style={{padding:5,
+                fontSize: 20,
                 color: COLOURS.black,
                 fontWeight: '500',
                 letterSpacing: 1,
@@ -298,7 +298,8 @@ const HomeScreen = ({navigation}) => {
             </Heading>
             </Center>
             </Box>
-
+{/* 
+***************************************************Footer section************************************************************* */}
 
             
             <View style={{ flexDirection: 'row', justifyContent:"center", backgroundColor:'white', height:150 }}  >  
@@ -311,7 +312,7 @@ const HomeScreen = ({navigation}) => {
   <Stack  >
   <Image 
   source={require('../../../components/database/images/products/genuine.jpg')}
-  style={{height:80 ,width:80}}
+  style={{height:80 ,width:100}}
   />
   {/* <Icon name="wood"
               size={50}
@@ -320,20 +321,23 @@ const HomeScreen = ({navigation}) => {
               alignItems='flex-start'
              
             /> */}
-  <Text italic
-   fontWeight="bold" 
-   fontSize='11'>
+  <Text style={{paddingTop:14,
+                fontSize: 11,
+                color: COLOURS.black,
+                fontWeight: '500',
+                letterSpacing: 1,
+                marginBottom: 20}}>
   Genuine Product
     </Text>
     </Stack>
 
    
-  <Divider bg="amber.500" thickness="2" mx="4" orientation="vertical" h="24"  ml={12} mr={12}/>
+  <Divider bg="amber.500" thickness="2" mx="4" orientation="vertical" h="24"  ml={9} mr={9}/>
 
   <Stack >
   <Image 
   source={require('../../../components/database/images/products/quality.jpg')}
-  style={{height:80 ,width:80}}
+  style={{height:80 ,width:100}}
   />
   {/* <Icon name="wood"
               size={50}
@@ -342,7 +346,12 @@ const HomeScreen = ({navigation}) => {
               alignItems='flex-start'
              
             /> */}
-  <Text italic fontWeight="bold" fontSize='11'>
+  <Text style={{paddingTop:14,
+                fontSize: 11,
+                color: COLOURS.black,
+                fontWeight: '500',
+                letterSpacing: 1,
+                marginBottom: 20}}>
   Quality Checked
     </Text>
     </Stack>
@@ -358,6 +367,15 @@ const HomeScreen = ({navigation}) => {
 
 
 
+</View>
+
+<View>
+  <Text style={{
+    fontSize:6,
+    textAlign:'center'
+  }}>
+© 2022  Arish Sheikh | All Rights Reserved 
+</Text>
 </View>
             
 
